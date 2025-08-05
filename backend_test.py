@@ -373,9 +373,10 @@ class DVDAgentTester:
     def test_error_handling(self):
         """Test error handling for invalid requests"""
         try:
-            # Test getting non-existent store
+            # Test updating non-existent store (PUT method exists)
             fake_id = str(uuid.uuid4())
-            response = self.session.get(f"{BACKEND_URL}/stores/{fake_id}")
+            update_data = {"name": "Test Store"}
+            response = self.session.put(f"{BACKEND_URL}/stores/{fake_id}", json=update_data)
             if response.status_code == 404:
                 self.log_test("Error Handling - Non-existent Store", True, 
                             "Correctly returned 404 for non-existent store")
