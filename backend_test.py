@@ -270,10 +270,8 @@ class DVDAgentTester:
     def test_email_discovery_job(self):
         """Test creating an email discovery job"""
         try:
-            # Use created store IDs if available
-            job_data = {}
-            if self.created_store_ids:
-                job_data["store_ids"] = self.created_store_ids[:1]  # Test with one store
+            # Use created store IDs if available - send as request body list
+            job_data = self.created_store_ids[:1] if self.created_store_ids else []
             
             response = self.session.post(f"{BACKEND_URL}/search/emails", json=job_data)
             if response.status_code == 200:
