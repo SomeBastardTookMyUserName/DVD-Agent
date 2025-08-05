@@ -1,9 +1,9 @@
 {
   "summary": {
-    "passed": 11,
+    "passed": 12,
     "total": 13,
-    "success_rate": 84.61538461538461,
-    "timestamp": "2025-08-05T04:42:30.537290"
+    "success_rate": 92.3076923076923,
+    "timestamp": "2025-08-05T04:43:40.089000"
   },
   "detailed_results": [
     {
@@ -11,105 +11,105 @@
       "success": true,
       "details": "API responded: DVD Store Data Collection API",
       "error": "",
-      "timestamp": "2025-08-05T04:42:11.278403"
+      "timestamp": "2025-08-05T04:43:20.943975"
     },
     {
       "test": "Hunter.io Account Info",
       "success": true,
       "details": "Credits: 0, Plan: Free",
       "error": "",
-      "timestamp": "2025-08-05T04:42:12.813559"
+      "timestamp": "2025-08-05T04:43:22.466148"
     },
     {
       "test": "Create DVD Store",
       "success": true,
-      "details": "Created store: Vintage Video Palace (ID: 9418a341-c042-44eb-9c00-497a8add6069)",
+      "details": "Created store: Vintage Video Palace (ID: b35a14ee-d960-40ce-b59d-c775497ebf74)",
       "error": "",
-      "timestamp": "2025-08-05T04:42:13.848387"
+      "timestamp": "2025-08-05T04:43:23.479613"
     },
     {
       "test": "Get All Stores",
       "success": true,
       "details": "Retrieved 1 stores",
       "error": "",
-      "timestamp": "2025-08-05T04:42:14.859926"
+      "timestamp": "2025-08-05T04:43:24.491142"
     },
     {
       "test": "Get Stores with Search Filter",
       "success": true,
       "details": "Found 1 stores matching 'video'",
       "error": "",
-      "timestamp": "2025-08-05T04:42:14.911301"
+      "timestamp": "2025-08-05T04:43:24.501249"
     },
     {
       "test": "Update Store",
       "success": true,
       "details": "Successfully updated store: Vintage Video Palace - Updated",
       "error": "",
-      "timestamp": "2025-08-05T04:42:15.926906"
+      "timestamp": "2025-08-05T04:43:25.520331"
     },
     {
       "test": "Verify Store",
       "success": true,
       "details": "Store successfully verified",
       "error": "",
-      "timestamp": "2025-08-05T04:42:16.941984"
+      "timestamp": "2025-08-05T04:43:26.531849"
     },
     {
       "test": "Directory Search Job",
       "success": true,
-      "details": "Started job: 4ab66645-30da-42a4-b14f-bce31248aa2c",
+      "details": "Started job: 056f78c3-a102-40dd-90f0-2869d647c70c",
       "error": "",
-      "timestamp": "2025-08-05T04:42:17.967617"
+      "timestamp": "2025-08-05T04:43:27.543024"
     },
     {
       "test": "Reddit Search Job",
       "success": true,
-      "details": "Started job: 08eb0dd8-3dc7-4e85-ab9b-a4868b49a74f",
+      "details": "Started job: 775b85ea-f2ed-404b-b90e-1747f83ae474",
       "error": "",
-      "timestamp": "2025-08-05T04:42:18.979576"
+      "timestamp": "2025-08-05T04:43:28.553804"
     },
     {
       "test": "Email Discovery Job",
-      "success": false,
-      "details": "",
-      "error": "HTTP 422: {\"detail\":[{\"type\":\"list_type\",\"loc\":[\"body\"],\"msg\":\"Input should be a valid list\",\"input\":{\"store_ids\":[\"9418a341-c042-44eb-9c00-497a8add6069\"]},\"url\":\"https://errors.pydantic.dev/2.11/v/list_type\"}]}",
-      "timestamp": "2025-08-05T04:42:19.988590"
+      "success": true,
+      "details": "Started job: e4f6549d-5776-4e9f-8a84-4bbba3d75751, processing 1 stores",
+      "error": "",
+      "timestamp": "2025-08-05T04:43:29.565195"
     },
     {
       "test": "Get Search Jobs",
       "success": true,
-      "details": "Retrieved 2 jobs",
+      "details": "Retrieved 6 jobs",
       "error": "",
-      "timestamp": "2025-08-05T04:42:20.999138"
+      "timestamp": "2025-08-05T04:43:30.576000"
     },
     {
       "test": "Get Specific Job",
       "success": true,
-      "details": "Job 4ab66645-30da-42a4-b14f-bce31248aa2c: directory_search - completed",
+      "details": "Job 056f78c3-a102-40dd-90f0-2869d647c70c: directory_search - completed",
       "error": "",
-      "timestamp": "2025-08-05T04:42:22.011818"
+      "timestamp": "2025-08-05T04:43:31.587343"
     },
     {
       "test": "Database Statistics",
       "success": false,
       "details": "",
       "error": "HTTP 500: Internal Server Error",
-      "timestamp": "2025-08-05T04:42:23.464472"
+      "timestamp": "2025-08-05T04:43:33.056723"
     },
     {
       "test": "Error Handling - Non-existent Store",
-      "success": false,
-      "details": "",
-      "error": "Expected 404, got 405",
-      "timestamp": "2025-08-05T04:42:24.475095"
+      "success": true,
+      "details": "Correctly returned 404 for non-existent store",
+      "error": "",
+      "timestamp": "2025-08-05T04:43:34.068210"
     },
     {
       "test": "Error Handling - Invalid Store Data",
       "success": true,
       "details": "Correctly returned 422 for invalid data",
       "error": "",
-      "timestamp": "2025-08-05T04:42:24.524762"
+      "timestamp": "2025-08-05T04:43:34.077913"
     }
   ]
 }
